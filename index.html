@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teja Konakalla | Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet" />
+
+  <!-- AOS Animation -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container">
+      <div class="logo">Teja Konakalla</div>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div id="tsparticles"></div>
+
+    <!-- Live Typing Background -->
+    <div class="code-typing-bg">
+      <pre id="code-typing"></pre>
+    </div>
+
+    <div class="hero-content" data-aos="fade-up">
+      <p class="hello wave">HELLO!</p>
+      <h1>I’m <span class="highlight">Teja</span> <span class="highlight">Konakalla</span></h1>
+      <p class="role"><span id="typed-text"></span></p>
+      <div class="hero-buttons">
+        <a href="https://www.linkedin.com/in/teja-konakalla-003378243" class="btn yellow" target="_blank">LinkedIn</a>
+        <a href="https://github.com/Tejakonakalla" class="btn outline" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <p class="about-text">
+        I'm <strong>Teja Konakalla</strong>, a passionate Software Engineer with a strong interest in backend systems and machine learning. I enjoy building scalable solutions, exploring cloud technologies like AWS, and solving real-world problems with Python.
+      </p>
+      <p class="about-text">
+        I have hands-on experience with frameworks like <strong>FastAPI</strong>, <strong>Django</strong>, and <strong>TensorFlow</strong>, and I thrive on contributing to impactful projects.
+      </p>
+
+      <div class="education-grid">
+        <div class="edu-block">
+          <h3>University of Maryland, Baltimore County, MD</h3>
+          <p><strong>Masters in Computer Science, GPA: 3.5</strong></p>
+          <span><strong>Aug 2023 – May 2025</strong></span>
+        </div>
+        <div class="edu-block">
+          <h3>Presidency University, Bangalore, India</h3>
+          <p><strong>Bachelors in Computer Engineering and Data Science, GPA: 3.75</strong></p>
+          <span><strong>May 2023</strong></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills" id="skills">
+    <div class="container" data-aos="fade-up">
+      <h2 class="section-title">Skills</h2>
+
+      <div class="skill-bars">
+        <div class="skill-bar">
+          <p>Python <span>90%</span></p>
+          <div class="bar"><div class="progress" style="width: 90%;"></div></div>
+        </div>
+        <div class="skill-bar">
+          <p>SQL <span>85%</span></p>
+          <div class="bar"><div class="progress" style="width: 85%;"></div></div>
+        </div>
+        <div class="skill-bar">
+          <p>Machine Learning <span>80%</span></p>
+          <div class="bar"><div class="progress" style="width: 80%;"></div></div>
+        </div>
+        <div class="skill-bar">
+          <p>Backend Development <span>88%</span></p>
+          <div class="bar"><div class="progress" style="width: 88%;"></div></div>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h4>Programming:</h4>
+        <p>Python, Java, HTML, R, SQL, MATLAB</p>
+      </div>
+      <div class="skill-category">
+        <h4>Databases:</h4>
+        <p>PostgreSQL, MySQL, MongoDB</p>
+      </div>
+      <div class="skill-category">
+        <h4>Backend Development:</h4>
+        <p>FastAPI, Django, Flask, Node.js, Express.js, Django REST</p>
+      </div>
+      <div class="skill-category">
+        <h4>Web Technologies:</h4>
+        <p>HTML, CSS, JavaScript</p>
+      </div>
+      <div class="skill-category">
+        <h4>Data Visualization:</h4>
+        <p>Power BI, Tableau</p>
+      </div>
+      <div class="skill-category">
+        <h4>Cloud & DevOps:</h4>
+        <p>AWS (EC2, Lambda), Docker, CI/CD Pipelines</p>
+      </div>
+      <div class="skill-category">
+        <h4>Tools & Platforms:</h4>
+        <p>GitHub, RabbitMQ, Kafka, WebSockets, AJAX</p>
+      </div>
+      <div class="skill-category">
+        <h4>Frameworks & Libraries:</h4>
+        <p>NumPy, Pandas, TensorFlow, Keras, Chainlit, Streamlit, PyQt5, Plotly Dash</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects" id="projects">
+    <div class="container" data-aos="fade-up">
+      <h2 class="section-title">Projects</h2>
+
+      <div class="project" data-aos="fade-up" data-aos-delay="100">
+        <h3>Driver Drowsiness Detection</h3>
+        <p>
+          A real-time system that detects driver fatigue using OpenCV and deep learning. It monitors eye aspect ratio (EAR) to recognize signs of drowsiness and triggers alerts to prevent accidents.
+        </p>
+        <a href="https://github.com/Tejakonakalla/DriverDrowsiness_Detection" target="_blank" class="btn yellow">View on GitHub</a>
+      </div>
+
+      <div class="project" data-aos="fade-up" data-aos-delay="200">
+        <h3>Sign Language Recognition</h3>
+        <p>
+          A computer vision project that identifies American Sign Language (ASL) alphabet signs using a CNN model. Trained on hand gesture images and integrated with OpenCV for live webcam detection.
+        </p>
+        <a href="https://github.com/Tejakonakalla/Sign-Language-Recognition-project" target="_blank" class="btn yellow">View on GitHub</a>
+      </div>
+    </div>
+  </section>
+<!-- Research & Publications Section -->
+<section class="projects" id="publications">
+    <div class="container" data-aos="fade-up">
+      <h2 class="section-title">Research & Publications</h2>
+  
+      <!-- EEG Study -->
+      <div class="project" data-aos="fade-up" data-aos-delay="50">
+        <h3>EEG-Based Neural Mechanisms Study</h3>
+        <ul class="project-bullets">
+          <li>Conducted ERP-based auditory word recognition using MATLAB (EEGLAB).</li>
+          <li>Applied ICA for EEG signal processing; identified N400 deflections for semantic processing.</li>
+          <li>Provided insights for BCIs and neurocognitive applications.</li>
+        </ul>
+      </div>
+  
+      <!-- Publications -->
+      <div class="project" data-aos="fade-up" data-aos-delay="100">
+        <h3>Review and Applications of Machine Learning</h3>
+        <p>
+          Published in <em>International Journal of Scientific Research in Engineering and Management (IJSREM)</em>,
+          Volume 07, Issue 02, February 2023. Impact Factor: 7.185, ISSN: 2582-3930.
+        </p>
+        <a href="https://ijsrem.com/download/review-and-applications-of-machine-learning/" target="_blank" class="btn yellow">Read Publication</a>
+      </div>
+  
+      <div class="project" data-aos="fade-up" data-aos-delay="200">
+        <h3>A Machine Learning Based Approach for Detection of Phishing Sites</h3>
+        <p>
+          Published in <em>International Journal of Scientific Research in Engineering and Management (IJSREM)</em>,
+          Volume 07, Issue 05, May 2023. SJIF 2023: 8.176, ISSN: 2582-3930.
+        </p>
+        <a href="https://ijsrem.com/download/a-machine-learning-based-approach-for-detection-of-phishing-sites/" target="_blank" class="btn yellow">Read Publication</a>
+      </div>
+    </div>
+  </section>
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container" data-aos="fade-up">
+      <h2 class="section-title">Contact</h2>
+      <p>Feel free to reach out to me via email or connect with me on LinkedIn.</p>
+      <div class="contact-links">
+        <a href="mailto:teja.konakalla@gmail.com" class="btn yellow" target="_blank">
+          <i class="fas fa-envelope"></i> teja.konakalla@gmail.com
+        </a>
+        <a href="https://www.linkedin.com/in/teja-konakalla-003378243" class="btn outline" target="_blank">
+          <i class="fab fa-linkedin"></i> LinkedIn Profile
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+
+  <script>
+    AOS.init();
+
+    // Typed.js animation
+    new Typed("#typed-text", {
+      strings: ["Software Engineer", "Backend Developer", "ML Enthusiast"],
+      typeSpeed: 50,
+      backSpeed: 30,
+      backDelay: 1500,
+      loop: true
+    });
+
+    // tsParticles background
+    tsParticles.load("tsparticles", {
+      fullScreen: { enable: false },
+      background: { color: { value: "#000" } },
+      particles: {
+        color: { value: "#ffc107" },
+        links: { enable: true, color: "#ffc107", distance: 120 },
+        move: { enable: true, speed: 1 },
+        number: { value: 40 },
+        opacity: { value: 0.5 },
+        shape: { type: "circle" },
+        size: { value: { min: 1, max: 3 } }
+      }
+    });
+
+    // Live Typing Background Code
+    const codeLines = [
+      "def detect_drowsiness(frame):",
+      "    face = detect_face(frame)",
+      "    if is_closed(face.eyes):",
+      "        alert_driver()",
+      "",
+      "def detect_sign_language(image):",
+      "    prediction = model.predict(image)",
+      "    return decode(prediction)",
+      "",
+      "# Live feed starts here..."
+    ];
+
+    let i = 0;
+    let line = 0;
+    const target = document.getElementById("code-typing");
+
+    function typeLine() {
+      if (line >= codeLines.length) return;
+      if (i <= codeLines[line].length) {
+        target.innerHTML = codeLines
+          .slice(0, line)
+          .concat([codeLines[line].substring(0, i++)])
+          .join("\n");
+        setTimeout(typeLine, 40);
+      } else {
+        i = 0;
+        line++;
+        setTimeout(typeLine, 600);
+      }
+    }
+
+    typeLine();
+  </script>
+
+</body>
+</html>
